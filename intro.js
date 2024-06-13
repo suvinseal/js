@@ -76,3 +76,17 @@ let comment = {
 
 console.log(comment.upvotes);
 
+// for loops 
+console.log("for loop practice!");
+for (let i = 0; i < 7; i++) {
+    console.log(i);
+}
+console.log("-----");
+console.log("looping through arrays practice!");
+// array loop
+
+const animals = ['dog', 'cat', 'lion'];
+
+for (let i = 0; i < animals.length; i++) {
+    console.log(i, animals[i]);
+}
