@@ -56,3 +56,23 @@ console.log(combo.indexOf('3'));
 let newCombo = combo.slice(2,);
 
 console.log(newCombo);
+
+// objects aka dict's in python
+
+const fitbitData = {
+    steps: 200,
+    workoutsThisWeek: '2 of 7',
+    totalMiles: 7.5
+}
+
+
+let comment = {
+    username: 'Jack',
+    downvotes: 15,
+    upvotes: 11,
+    commentText: 'I am a good boy',
+    tags: ['#good', '#boy']
+}
+
+console.log(comment.upvotes);
+
