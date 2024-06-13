@@ -43,7 +43,7 @@ console.log('len of array=', colors.length);
 
 console.log(colors[1]);
 
-// shift or unshift to remove or add elments from beginning of array
+// shift or unshift to remove or add elments from beginning of array 
 
 let numbers = ['1', '2', '3'];
 
@@ -83,7 +83,7 @@ for (let i = 0; i < 7; i++) {
 }
 console.log("-----");
 console.log("looping through arrays practice!");
-// array loop
+// array loop.
 
 const animals = ['dog', 'cat', 'lion'];
 
