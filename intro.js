@@ -90,3 +90,37 @@ const animals = ['dog', 'cat', 'lion'];
 for (let i = 0; i < animals.length; i++) {
     console.log(i, animals[i]);
 }
+
+// play with break 
+
+let maximum = parseInt(prompt('Enter the maximum number'));
+
+const targetNum = Math.floor(Math.random() * maximum) + 1;
+
+console.log(targetNum);
+
+// for of loop (iterate over arrays)
+
+const subReddits = ['pics', 'funny', 'cats'];
+
+for (let k = 0; k < subReddits.length; k++) {
+    console.log(`visit reddit.com/r/${subReddits[k]}`);
+}
+
+// it can be also written as
+
+for (let sub of subReddits) {
+    console.log(sub);
+}
+
+// iterating over a dictionary/object
+
+const testScores = {
+    john: 90,
+    jane: 80,
+    jill: 100
+}
+
+for (let name in testScores) {
+    console.log(name, testScores[name]);
+}
