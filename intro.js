@@ -124,3 +124,12 @@ const testScores = {
 for (let name in testScores) {
     console.log(name, testScores[name]);
 }
+
+
+// to get the sum of values in dictionary
+
+let total = 0;
+
+for (let score of Object.values(testScores)) {
+    total += score;
+}
