@@ -5,3 +5,4 @@ function twoSum(a, b) {
 }
 
 console.log(twoSum(1, 2));
+
