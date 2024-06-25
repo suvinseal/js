@@ -98,8 +98,57 @@ function makeMysteryFunc() {
 }
 
 //console.log(makeMysteryFunc());
-const mystery = makeMysteryFunc();
+const mystery = makeMysteryFunc(); // mystery is both a variable and a function reference, and we use it as a function by calling it with parenthesis 
 
 mystery();
 
 console.log("-------")
+
+// methods are functions that are associated with objects as properties 
+// functions are standalone blocks that can be called independently
+
+// keyword this- used inside a method object?
+
+const cat = {
+    name: "elvin",
+    color: "white",
+    meow() {
+        console.log(`${this.name} says meow`);
+    }
+}
+
+console.log(cat.meow());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
