@@ -6,13 +6,6 @@ function twoSum(a, b) {
 
 console.log(twoSum(1, 2));
 
-// scope
-
-function collectEggs() {
-    let totalEggs = 6;
-    console.log(totalEggs);
-}
-
 // print in functions
 
 function greet(firstName) {
@@ -28,3 +21,85 @@ function greet2(firstName, lastName) {
 }
 
 greet2("Elvin", "John");
+
+
+// scope
+
+function collectEggs() {
+    let totalEggs = 6;
+    console.log(totalEggs);
+}
+
+// global and local scope 
+
+let bird = "macau";
+
+function identifyBird() {
+    //let bird = "duck";
+    console.log(bird);
+}
+
+identifyBird()
+
+// lexical scope 
+
+// for in is for objects
+// for of is for arrays
+
+// inner funciton nested inside a parent function has access to the parent function's scope 
+
+function robbery() {
+    const heros = ['spiderman', 'wolverine', 'black panther'];
+    function cryForHelp() {
+        for (let hero of heros) {
+            console.log(`help me ${hero}!!`);
+        }
+    }
+    cryForHelp();
+}
+
+robbery();
+
+console.log("-------")
+
+// function expressions (functions without names)
+
+const add = function (a, b) {
+    return a + b;
+}
+
+console.log(add(5, 7));
+
+// higher order function -- accepts other functions as arguements and return a function
+
+function callTwice(f) {
+    f();
+    f();
+}
+
+function rollDice() {
+    console.log(Math.floor(Math.random() * 6) + 1);
+}
+
+callTwice(rollDice);
+
+function makeMysteryFunc() {
+    const rand = Math.random();
+    if (rand < 0.5) {
+        return function () {
+            console.log("congrats, i am a good function")
+        }
+    }
+    else {
+        return function () {
+            console.log("i am a bad function")
+        }
+    }
+}
+
+//console.log(makeMysteryFunc());
+const mystery = makeMysteryFunc();
+
+mystery();
+
+console.log("-------")
