@@ -4,3 +4,5 @@ nums.forEach(function (el) {
     console.log(el)
 });
 
+// map 
+
