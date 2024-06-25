@@ -6,3 +6,4 @@ nums.forEach(function (el) {
 
 console.log('------------------------------------');
 
+// map 
