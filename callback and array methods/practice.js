@@ -17,7 +17,6 @@ const caps = texts.map(el => el.toUpperCase())
 
 console.log(caps);
 
-
 console.log("------");
 
 const numbers = [4, 5, 2, 6, 7];
@@ -36,3 +35,16 @@ console.log("------");
 
 // set time out
 
+// print statement appears after 3 seconds / good for displaying aletrs or notifications
+setTimeout(() => {
+    console.log("timeout");
+}, 3000);
+
+// clock interval is used to periodically update part of user interface, such as a clock or a status display
+// other use cases include real-time data fetching, monitoring user inactivity, animations ,and polling 
+
+const id = setInterval(() => {
+    console.log(Math.random());
+}, 2000); // 2 seconds 
+
+// use clearInterval(id) to stop;
