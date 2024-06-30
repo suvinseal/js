@@ -78,11 +78,59 @@ console.log(num4.some(num => num > 45));
 
 // we define how to reduce arrays 
 
-const sample = [5, 6, 2, 7].reduce((acc, val) => {
-    return acc + val;
-})
+const sample = [5, 6, 2, 7].reduce((acc, val) => acc + val)
 
 console.log(sample);
+
+console.log("------");
+
+// new js functions 
+
+// default params
+
+console.log("Default params");
+
+function rollDice(num = 6) {
+    return Math.floor(Math.random()) + 1;
+}
+
+console.log(rollDice());
+
+console.log("------");
+
+// spread 
+
+const nums2 = [4, 5, 6, 3, 93, 98, 39, 0];
+
+console.log(Math.max(...nums2)); // think of it as removing brackets from array and passing it in a function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
