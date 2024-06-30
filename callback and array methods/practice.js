@@ -74,11 +74,15 @@ console.log(num4.every(num => num > 3));
 
 console.log(num4.some(num => num > 45));
 
-// reduce 
+// reduce - take an array and reduce it to single value
 
+// we define how to reduce arrays 
 
+const sample = [5, 6, 2, 7].reduce((acc, val) => {
+    return acc + val;
+})
 
-
+console.log(sample);
 
 
 
