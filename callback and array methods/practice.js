@@ -104,6 +104,13 @@ const nums2 = [4, 5, 6, 3, 93, 98, 39, 0];
 
 console.log(Math.max(...nums2)); // think of it as removing brackets from array and passing it in a function 
 
+// also helps with copying arrays and works with objects as well
+
+const copyNum = [...nums2];
+
+// rest
+
+
 
 
 
