@@ -108,7 +108,60 @@ console.log(Math.max(...nums2)); // think of it as removing brackets from array 
 
 const copyNum = [...nums2];
 
-// rest
+// rest params 
+
+function raceResults(...race) {
+    console.log(race);
+}
+
+// raceResults("John", "Jane", "Bob");
+// Output: ["John", "Jane", "Bob"]
+
+//raceResults("Alice");
+// Output: ["Alice"]
+
+//raceResults("First", "Second", "Third", "Fourth", "Fifth");
+// Output: ["First", "Second", "Third", "Fourth", "Fifth"]
+
+// This function is particularly useful when you don't know in 
+// advance how many arguments will be passed to the function. 
+// It allows for flexibility in the number of parameters without 
+// having to define them explicitly.
+
+// destructuring 
+
+const scores = [534, 645, 23, 756];
+
+const lastHighestScore = scores[2];
+const highestScore = scores[3];
+
+const [thirdHighestScore, secondHighestScore, ...everyoneElse] = scores;
+
+console.log(`third highest score: ${thirdHighestScore}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
